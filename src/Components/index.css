@@ -1,0 +1,83 @@
+.mainContainer {
+  background-color: #eee;
+  display: flex;
+  justify-content: center;
+}
+.contentDiv {
+  max-width: 1500px;
+  padding: 30px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  background-color: white;
+}
+.title {
+  display: flex;
+  justify-content: space-between;
+}
+.buttonClass {
+  display: flex;
+  flex-direction: column;
+}
+
+.CardBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  background-color: #eee;
+  border-radius: 20px;
+}
+
+.mainPersonDiv {
+  display: flex;
+  flex-direction: column;
+  background-color: #eee;
+  align-items: center;
+  padding: 20px;
+}
+@media screen and (min-device-width: 1300px) {
+  .mainCard {
+    width: 270px;
+    height: 350px;
+  }
+  .mainDivCard {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+@media screen and (min-device-width: 768px) and (max-device-width: 1299px) {
+  .mainDivCard {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+.mainDivCard {
+  gap: 1rem;
+  display: grid;
+}
+.mainCard {
+  width: 270px;
+  cursor: pointer;
+  height: 350px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  border-radius: 30px;
+  color: black;
+  font-size: x-large;
+  justify-content: center;
+  align-items: center;
+}
+.circleClass {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  font-size: xx-large;
+  border-radius: 100%;
+  background-color: #eee;
+  color: black;
+  width: 100px;
+  height: 100px;
+}
